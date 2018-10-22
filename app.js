@@ -51,11 +51,4 @@ app.get('/characters/:id', (req, res) => {
 //   res.json(characters[req.params.id - 1])
 // })
 
-app.post('/characters', (req, res) => {
-  const body = req.body
-  console.log(req.body)
-  characters.push(body)
-  res.json(characters)
-})
-
 app.listen(port, () => console.log('Server running on port 3000'))
