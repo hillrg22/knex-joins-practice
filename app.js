@@ -82,6 +82,45 @@ app.post('/characters', (req, res, next) => {
 })
 
 
+app.put('/characters/:id', (req, res) => {
+  const id = req.params.id
+  const body = req.body
+
+  console.log(id)
+  console.log(body)
+
+  // Find correct resource by it's ID
+    // Some type of loop
+  const updatedCharacters = characters.map(character => {
+    // The current character is the one with matching ID
+    if (character.id == id) {
+      // Replace the character that matches by ID with the new body
+      return body
+    }
+    // The current character is NOT the one with matching ID
+    return character
+  })
+  
+  // res.json() with the modified array
+  res.json({ characters: updatedCharacters })
+
+})
+
+
+app.delete('/characters/:id', (req, res) => {
+  const id = req.params.id
+
+  // Find correct resource by it's ID
+    // Some type of loop
+  const survivors = characters.filter(character => {
+    return character.id != id
+  })
+
+  // Remove the resource from the array
+
+  // res.json() with the updated array (or new array)
+  res.json({ characters: survivors })
+})
 
 
 

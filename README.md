@@ -50,3 +50,20 @@
 
 * [Express Docs - req.params](https://expressjs.com/en/4x/api.html#req.params)
 * [Express Docs - req.body](https://expressjs.com/en/4x/api.html#req.body)
+
+
+
+
+
+# Basic Express Server: Express Router & Modularization
+
+## Objectives
+
+* Integrate Express Router into a server
+* Modularize server routes
+  - Separate routes into their own folder
+  - Refactor route endpoints to be modular
+
+## Resources
+
+* [Express Docs - Router](https://expressjs.com/en/4x/api.html#router)
