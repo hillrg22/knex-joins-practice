@@ -113,12 +113,12 @@
   "start": "node app.js",
   "dev": "nodemon app.js"
   ```
-* Make sure PORT is being set dynamically with environment variable
+* Make sure PORT is being set dynamically with environment variable in app.js
   ```js
   const port = process.env.PORT || 3000
   ```
-* Bring in CORS package and enable it as middleware
-  `$ npm install cors`
+* Bring in CORS package and enable it as middleware in app.js
+  - `$ npm install cors`
   ```js 
   const cors = require('cors')
 
