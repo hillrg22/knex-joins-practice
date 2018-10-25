@@ -54,8 +54,4 @@ function errorHandler(err, req, res, next) {
   })
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> breakout-5-start
 app.listen(port, () => console.log('Server running on port 3000'))
