@@ -67,3 +67,44 @@
 ## Resources
 
 * [Express Docs - Router](https://expressjs.com/en/4x/api.html#router)
+
+## Notes
+
+* What is Express Router?
+  - Handles middleware
+  - Referred to as a "mini-app"
+    * Self-contained
+    * Can be used in other parts of app
+  - Handles routing functions
+  - Recreate same functionality of having every route in app.js but with the benefits of modularization
+  - Just an object
+  - How do we use the Router?
+    * As middleware
+
+* Modularize server routes
+  - Separate routes into their own folder
+    1. Create routes folder and route file
+    2. Require express library
+    3. Capture the express.Router() in a variable
+    4. Export the router with module.exports
+  - Routers must be used as middleware with app.use() at the correct place in the app's pipeline
+    * After middleware
+    * Before error handlers
+
+
+
+# Basic Express Server: Deploy to Heroku
+
+## Objectives
+
+* Deploy an express server to Heroku
+* Use Heroku logs to debug deployment issues
+* Configure server code to use environment variables
+
+## Resources
+
+* [Heroku Docs - Deploy Node.js App Tutorial](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+* [Heroku Docs - Heroku Logs](https://devcenter.heroku.com/articles/getting-started-with-nodejs#view-logs)
+
+## Notes
+
