@@ -1,7 +1,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-let port = 3000
+
+let port = process.env.PORT || 5000
 
 
 // Route imports
@@ -54,4 +55,4 @@ function errorHandler(err, req, res, next) {
   })
 }
 
-app.listen(port, () => console.log('Server running on port 3000'))
+app.listen(port, () => console.log(`Server running on port ${port}`))
