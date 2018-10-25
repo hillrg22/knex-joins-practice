@@ -110,14 +110,15 @@
 
 * Make sure start script is correct in package.json
   ```json
-  "node app.js"
+  "start": "node app.js",
+  "dev": "nodemon app.js"
   ```
 * Make sure PORT is being set dynamically with environment variable
   ```js
   const port = process.env.PORT || 3000
   ```
 * Bring in CORS package and enable it as middleware
-  - `npm install cors`
+  `$ npm install cors`
   ```js 
   const cors = require('cors')
 
