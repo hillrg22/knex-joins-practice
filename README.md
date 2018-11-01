@@ -124,3 +124,29 @@
 
   app.use(cors()) // Above routes
   ```
+
+
+
+
+
+# Basic Express Server: Knex Migrations & Seeds
+
+## Objectives
+
+* Add knex to a project
+  - Initialize knex
+* Setup connection to a local database
+* Create and run migration files
+* Create and run seed files
+
+## Resources
+
+* [Knex.js Docs](https://knexjs.org/)
+* [Knex.js Docs - Schema Builder](https://knexjs.org/#Schema)
+
+## Notes
+
+
+
+
+
