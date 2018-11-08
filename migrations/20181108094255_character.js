@@ -1,19 +1,15 @@
 
-exports.up = function(knex, Promise) {
-  // Code to run to set up our tables
-    // Create schema
-  
-  // Setup for a table schema
+exports.up = function (knex, Promise) {
   return knex.schema.createTable('character', function (table) {
     table.increments()
     table.string('name')
     table.integer('height')
     table.integer('mass')
+    table.integer('force_id').references('force.id').unsigned().onDelete('cascade')
   })
 
 };
 
-exports.down = function(knex, Promise) {
-  // Code to run to remove tables & restart
+exports.down = function (knex, Promise) {
   return knex.schema.dropTableIfExists('character')
 };
