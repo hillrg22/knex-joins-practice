@@ -119,7 +119,7 @@
   ```
 * Bring in CORS package and enable it as middleware in app.js
   - `$ npm install cors`
-  ```js 
+  ```js
   const cors = require('cors')
 
   app.use(cors()) // Above routes
@@ -185,3 +185,7 @@
 ## Resources
 
 * [Knex Docs](https://knexjs.org/)
+
+
+
+## Notes
