@@ -172,7 +172,16 @@
 
 
 
+# Basic Express Server: Knex Joins!
 
+## Objectives
 
+* Review Knex migrations and seeds
+* Write one-to-many joins with Knex
+  - Join characters with their associated force side
+* Write many-to-many joins with Knex
+  - Join characters with their associated movies
 
+## Resources
 
+* [Knex Docs](https://knexjs.org/)

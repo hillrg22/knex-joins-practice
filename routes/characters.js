@@ -6,7 +6,7 @@ const knex = require('../db/connection')
 
 router.get('/', (req, res) => {
   knex('character')
-    .orderBy('id', 'asc')
+    .orderBy('character.id', 'asc')
     .then(characters => {
       // Can only res.json once we have received the response/data from the db
       res.json({ characters: characters })
@@ -23,6 +23,7 @@ router.get('/:id', (req, res, next) => {
       res.json({ character: character[0] })
     })
 })
+
 
 router.post('/', (req, res, next) => {
   // Pull the data that is to be posted from the request body
